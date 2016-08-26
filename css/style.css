@@ -1,0 +1,218 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,900';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+* {
+    transition: .3s;
+}
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+	outline: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    max-width: 1640px;
+    margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+.header {
+    float: left;
+}
+.header img {
+    transition: .3s;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.header img:hover {
+    opacity: 0.5;
+}
+nav {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+nav ul {
+    padding-top: 62px;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    padding-right: 71px;
+}
+nav ul li:last-of-type {
+    padding-right: 0px;
+}
+nav ul li a {
+    transition: .3s;
+    padding: 20px;
+}
+nav ul li a:hover {
+    color: white;
+    border-radius: 5px;
+    background-color: #1e82d8;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.page-content {
+    position: relative;
+    border-top: 1px solid #e2e2e2;
+    clear: both;
+    height: 562px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+.center-hor {
+    height: 562px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.center-hor img {
+    min-width: 100%;
+    min-height: 100%;
+}
+.col-6 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline;
+    float: left;
+    width: 50%;
+}
+.col-6:last-of-type {
+    position: absolute;
+}
+.slogan {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #3080D3;
+    font-size: 60px;
+    z-index: 999;
+}
+.slogan-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #8E8D91;
+    font-size: 25px;
+    width: 80%;
+    z-index: 999;
+}
+.right {
+    text-align: right;
+}
+.text-input {
+    transition: .3s;
+    font-family: 'Lato', sans-serif;
+    color: #8E8D91;
+    font-size: 20px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #3080D3;
+}
+form {
+    margin-top: 60px;
+    z-index: 999;
+}
+.text-input:focus {
+    border-radius: 10px;
+}
+@keyframes anim {
+    0% {
+        transform: rotate(-1deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+}
+.text-input:focus[placeholder] {
+    animation: anim 1s;
+}
+.text-submit {
+    position: relative;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: #1e82d8;
+    text-transform: uppercase;
+    padding: 19px;
+    border: none;
+    border: 1px solid transparent;
+}
+.text-submit:hover {
+    cursor: pointer;
+    color: #1e82d8;
+    background-color: white;
+    border: 1px solid #1e82d8;
+}
+@media all and (max-width: 1295px) {
+    .text-submit {
+        display: block;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+@media all and (max-width: 1084px) {
+    nav ul li {
+        padding-right: 20px;
+    }
+}
+@media all and (max-width: 955px) {
+    .slogan {
+        font-size: 40px;
+    }
+    .text-input {
+        width: 200px;
+    }
+    nav ul li {
+        padding-right: 10px;
+    }
+}
+@media all and (max-width: 902px) {
+    nav ul {
+        text-align: center;
+        margin-bottom: 22px;
+        clear: both;
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+    .header {
+        text-align: center;
+        float: none;
+    }
+}
+@media all and (max-width: 571px) {
+    .col-6 {
+        width: 100%;
+    }
+    .col-6:last-of-type {
+        opacity: 0.2;
+        display: block;
+    }
+    nav ul {
+        padding: 0px;
+        line-height: 60px;
+    }
